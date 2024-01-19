@@ -11,7 +11,7 @@ My personal AwesomeWM configuration for work and daily tasks 👨🏼‍💻
 
 ---
 
-- 🐧 **OS:** EndeavourOS
+- 🐧 **OS:** EndeavourOS (Arch based)
 - 🧑‍💻 **Terminal:** Kitty
 - 🌙 **Icons:** [Küyen](https://github.com/fabianalexisinostroza/Kuyen-icons)
 - 🔡 **Fonts**
@@ -20,6 +20,7 @@ My personal AwesomeWM configuration for work and daily tasks 👨🏼‍💻
   - Icons: [Material Symbols Rounded](https://github.com/google/material-design-icons/tree/master/variablefont) and [jetbrains-mono-nerd](https://archlinux.org/packages/community/any/ttf-jetbrains-mono-nerd/)
 - ▶ Video wallpaper [here](https://moewalls.com/pixel-art/cyberpunk-city-pixel-live-wallpaper/)
 - 📄 Rest of .dotfiles [here](https://github.com/pablonoya/dotfiles)
+- note: This config is suitable for **any** screen resolution
 
 ### ✨ Features
 
@@ -40,12 +41,13 @@ My personal AwesomeWM configuration for work and daily tasks 👨🏼‍💻
 ---
 
 Tested on Asus G14 (2020) with EndeavourOS
+*Tested on Parcard bell EasyNote (2014) with arch
 
 Install dependencies
 
 ```sh
-pikaur -S awesome-git \
-acpi acpid acpi_call upower \
+yay -S awesome-git \
+acpi acpid acpi_call upower inetutils \
 pipewire pipewire-alsa pipewire-pulse playerctl pamixer jq \
 brightnessctl networkmanager  \
 
@@ -61,14 +63,12 @@ flameshot pavucontrol asusctl rog-control-center \
 mpv xwinwrap-git \
 python-pipx \
 gcalendar \
-
---needed
 ```
 
-Clone the proyect
+Clone the project
 
 ```sh
-git clone --recurse-submodules https://github.com/pablonoya/awesomewm-configuration
+git clone --recurse-submodules https://github.com/pablonoya/awesomewm-configuration #original
 ```
 
 To obtain the color theme, copy or replace my [Xresources file](https://github.com/pablonoya/dotfiles/blob/main/Xresources) to

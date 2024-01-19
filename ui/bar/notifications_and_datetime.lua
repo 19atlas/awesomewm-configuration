@@ -29,8 +29,8 @@ naughty.connect_signal(
 
 return function(is_vertical)
     local get_datetime_format = function()
-        local date = "%a" .. color_helpers.colorize_by_time_of_day("<b>.</b>") .. "%d"
-        local time = "<b>%I" .. color_helpers.colorize_by_time_of_day(":") .. "%M</b>"
+        local date = "%a" .. color_helpers.colorize_by_time_of_day("<b>/</b>") .. "%d"
+        local time = "<b>%H" .. color_helpers.colorize_by_time_of_day(".") .. "%M</b>"
 
         return (date .. (is_vertical and "\n" or " ") .. time)
     end

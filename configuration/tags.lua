@@ -7,14 +7,14 @@ local bling_layout = require("module.bling.layout")
 tag.connect_signal(
     "request::default_layouts", function()
         awful_layout.append_default_layouts {
+            awful_layout.suit.floating,
             awful_layout.suit.tile,
             awful_layout.suit.max,
             awful_layout.suit.magnifier,
             bling_layout.horizontal,
             awful_layout.suit.spiral,
             bling_layout.mstab,
-            bling_layout.deck,
-            awful_layout.suit.floating
+            bling_layout.deck
         }
     end
 )

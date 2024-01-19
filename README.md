@@ -3,7 +3,7 @@
 [![awesome-rice-badge](https://raw.githubusercontent.com/zemmsoares/awesome-rices/main/assets/awesome-rice-badge.svg)](https://github.com/zemmsoares/awesome-rices)
 [![works badge](https://cdn.jsdelivr.net/gh/nikku/works-on-my-machine@v0.2.0/badge.svg)](https://github.com/nikku/works-on-my-machine)
 
-My personal AwesomeWM configuration for work and daily tasks 👨🏼‍💻
+My fork of [AwesomeWM configuration](https://github.com/pablonoya/awesomewm-configuration)
 
 ![full_screenshot](./screenshots/full.png)
 
@@ -40,7 +40,7 @@ My personal AwesomeWM configuration for work and daily tasks 👨🏼‍💻
 
 ---
 
-Tested on Asus G14 (2020) with EndeavourOS
+Tested on Asus G14 (2020) with EndeavourOS <br>
 *Tested on Parcard bell EasyNote (2014) with arch
 
 Install dependencies
@@ -65,7 +65,7 @@ python-pipx \
 gcalendar \
 ```
 
-Clone the project
+clone the project
 
 ```sh
 git clone --recurse-submodules https://github.com/pablonoya/awesomewm-configuration #original
